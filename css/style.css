@@ -504,6 +504,8 @@ header.sticky .logo-brand {
     width: 100%;
     float: left;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 .menuzord a,
 .menuzord-menu ul.dropdown li a {
@@ -521,7 +523,10 @@ header.sticky .logo-brand {
     text-decoration: none;
     font-size: 24px;
     font-weight: 600;
-    cursor: pointer
+    cursor: pointer;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 .menuzord-menu {
     margin: 0;
