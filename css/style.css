@@ -214,7 +214,8 @@ hr {
     margin-top: 0px;
     margin-bottom: 0px;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #222;
+
 }
 
 
@@ -1294,6 +1295,15 @@ header.nav-block-left {
 }
 
 .parallax {
+     background-image: url("../img/custom/back_hero.jpg")!important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 50% 50%;
+}
+
+.parallax2 {
      background-image: url("../img/custom/back_hero.jpg")!important;
     background-size: cover;
     background-attachment: fixed;
@@ -4304,7 +4314,7 @@ address p {
 
 
 
-.overlap_l {
+.overlap {
     margin: 50px 0px 0px -100px
 }
 
@@ -4327,5 +4337,24 @@ address p {
 }
 
 .text_b {
-    font-size: 40px
+    font-size: 30px;
+    font-family: 'Avenir', sans-serif;
 }
+
+.overlap_b {
+    margin: 0px 0px 0px -50px
+}
+
+.bg_cloth {
+    background: url("../img/custom/seam_fab.jpg");
+}
+
+.pad_top {
+    padding-top: 80px;
+}
+
+.lg_text {
+    font-size: 60px;
+}
+
+
