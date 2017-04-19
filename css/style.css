@@ -4207,6 +4207,7 @@ address p {
 }
 #menu li{
   display: inline;
+  margin: 0 12px;
 }
 
 .font_location {
