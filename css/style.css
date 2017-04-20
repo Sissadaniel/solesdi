@@ -144,6 +144,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 

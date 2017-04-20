@@ -7,7 +7,6 @@ html, body {
     border-color: transparent;
     background-color: #222;
 		width: 100vw;
-    margin-top: 24px;
 }
 
 .navbar-default .navbar-brand {
@@ -28,11 +27,8 @@ html, body {
 }
 
 .navbar-default .navbar-toggle {
-    border: none;
-    /*
     border-color: #1ee2e7;
     background-color: #1ee2e7;
-    */
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -41,7 +37,7 @@ html, body {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #222222;
+    background-color: #1ee2e7;
 }
 
 .navbar-default .nav li a {
@@ -74,10 +70,6 @@ html, body {
     background-color: #555;
     color: #fff;
     height: 24px;
-    position: fixed;
-    width: 100vw;
-    text-align: center;
-    z-index: 9999;
 }
 
 .locations ul {
@@ -121,10 +113,6 @@ html, body {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
-    .locations {
-        text-align: left;
-    }
-
 }
 </style>
     <div class="locations">
