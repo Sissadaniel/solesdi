@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Mosaddek">
-
     <!--favicon icon-->
     <link rel="icon" type="image/png" href="img/favicon.png">
 
     <title>Solesdi</title>
-
-
     <!--common style-->
-
-
     <link href='http://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic,200italic,200' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -67,54 +62,43 @@
 
     <div id="header_template"></div>
 
-<section class="body-content">
-
-    <div class="padding_slick">
-        <div class="center">
-            <div><img src="img/custom/boffi_logo.png"></div>
-            <div><img src="img/custom/molteni_logo.png"></div>
-            <div><img src="img/custom/dada_logo.png"></div>
-            <div><img src="img/custom/giorgetti_logo.png"></div>
-            <div><img src="img/custom/roda_logo.png"></div>
-            <div><img src="img/custom/citterio_logo.png"></div>
-            <div><img src="img/custom/living_logo.png"></div>
-            <div><img src="img/custom/nero_logo.png"></div>
-            <div><img src="img/custom/listone_logo.png"></div>
-            <div><img src="img/custom/henge_logo.png"></div>
-            <div><img src="img/custom/depavoda_logo.png"></div>
+    <section class="body-content">
+        <div class="padding_slick">
+            <div class="center">
+                <div><img src="img/custom/boffi_logo.png"></div>
+                <div><img src="img/custom/molteni_logo.png"></div>
+                <div><img src="img/custom/dada_logo.png"></div>
+                <div><img src="img/custom/giorgetti_logo.png"></div>
+                <div><img src="img/custom/roda_logo.png"></div>
+                <div><img src="img/custom/citterio_logo.png"></div>
+                <div><img src="img/custom/living_logo.png"></div>
+                <div><img src="img/custom/nero_logo.png"></div>
+                <div><img src="img/custom/listone_logo.png"></div>
+                <div><img src="img/custom/henge_logo.png"></div>
+                <div><img src="img/custom/depavoda_logo.png"></div>
+            </div>
         </div>
-    </div>
     </section>
 
     <!--hero section-->
-    <div id="fullscreen-banner" class="parallax">
-        <div class="padding_slick">
-        </div>
-        <div id="fullscreen-banner" class="full-banner text-center vertical-align">
 
-            <!--<div class="container-mid">
-            <div class="container">
-                <div class="banner-title light-txt">
-                    <h2 class="text-uppercase ls-20">get to know us</h2>
-                </div>
-            </div>
-        </div>-->
-        </div>
+    <div id="fullscreen-banner" class="parallax">
     </div>
 
+    <div class="parallax_mob">
+    <img src="./img/custom/back_hero.jpg" alt="">
+    </div>
 
     <!--hero section-->
     <div class="bg_linon">
         <div class="container">
             <div class="row">
-                <div class="inline-block marg_hor">
                     <!--title-->
-                    <div class="heading-title-alt text-center col-md-8 col-md-offset-2">
+                    <div class=" text-center col-md-8 col-md-offset-2 pad_row">
                         <div class="text-uppercase phrase_solesdi white_font">Solesdi</div>
                         <span class="heading-sub-title text-uppercase white_font">I have hinted that I would often jerk poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. </span>
                     </div>
                     <!--title-->
-                </div>
             </div>
         </div>
     </div>
@@ -404,7 +388,7 @@
             responsive: [{
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                         infinite: true,
                         adaptiveHeight: true,
                         autoplay: true,
@@ -415,7 +399,18 @@
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
+                        infinite: true,
+                        adaptiveHeight: true,
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        arrows: false,
+                    }
+                },
+                         {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5,
                         infinite: true,
                         adaptiveHeight: true,
                         autoplay: true,

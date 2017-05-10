@@ -1299,16 +1299,14 @@ header.nav-block-left {
     width: 100%;
     overflow: hidden;
     margin-top: 100px;
-
 }
 
 .parallax {
-     background-image: url("../img/custom/back_hero.jpg")!important;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-position: 50% 50%;
+    background-image: url("../img/custom/back_hero.jpg")!important;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+    background-position: center;
 }
 
 .parallax2 {
@@ -2131,6 +2129,34 @@ header.nav-block-left {
         right: 0px;
     }
 }
+
+.parallax_mob{
+        display: none;
+
+    }
+
+
+
+@media screen and (max-width: 767px){
+    .parallax{
+        display: none;
+    }
+
+    .parallax_mob{
+        display: block;
+    }
+
+    .parallax_mob img{
+        max-width: 100%;
+
+    }
+
+    .body-content {
+
+    margin-top: 75px;
+}
+}
+
 
 /* ----------------------------------------------------------------
     slider revolution
@@ -4390,3 +4416,12 @@ address p {
     text-align: center;
     font-size: 17px;
 }
+
+.pad_row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
