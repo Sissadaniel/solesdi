@@ -36,7 +36,14 @@ Table of contents
 
 @media screen and (max-width: 1199px) {
     
-
+.overlap {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+    .overlap_b {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
     
 }
 
@@ -49,6 +56,8 @@ Table of contents
     .login-box.gray-bg {
         margin-bottom: 20px;
     }
+
+
 
 }
   
@@ -102,7 +111,6 @@ Table of contents
     }
 
 
-
 }
 
 @media screen and (max-width: 800px) {
@@ -143,6 +151,7 @@ Table of contents
     .post-list-aside {
         margin-bottom: 50px;
     }
+
 }
 
   

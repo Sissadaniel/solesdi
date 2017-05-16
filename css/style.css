@@ -135,7 +135,7 @@ Table of contents
 
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Muli', sans-serif;
     line-height: 1.5;
     color: #323232;
     font-size: 15px;
@@ -162,7 +162,7 @@ h6 {
     font-weight: 600;
     line-height: 1.5;
     margin: 0 0 30px 0;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-weight: normal;
 }
 
@@ -208,7 +208,7 @@ p {
 }
 
 p, li {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 hr {
@@ -496,7 +496,7 @@ header.sticky .logo-brand {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Muli', sans-serif;
     text-transform: uppercase;
     letter-spacing: .5px;
     font-weight: normal;
@@ -1500,7 +1500,7 @@ header.nav-block-left {
     font-size:12px;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-weight: normal;
     letter-spacing: 3px;
     color: #757575;
@@ -1564,7 +1564,7 @@ header.nav-block-left {
     margin: 0 15px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Muli', sans-serif;
     letter-spacing: 3px;
 }
 
@@ -1612,7 +1612,7 @@ header.nav-block-left {
     margin: 0;
     font-size: 12px;
     text-transform: uppercase;
-    font-family: 'Abel', sans-serif;
+    font-family: 'muli', sans-serif;
     font-weight: normal;
     letter-spacing: 2px;
     color: #7e7e7e;
@@ -2193,13 +2193,13 @@ header.nav-block-left {
 
 .rev-heading {
     color: #333;
-    font: normal 60px/1.5 'Abel', sans-serif;
+    font: normal 60px/1.5 'Muli', sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 .rev-subheading {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Muli', sans-serif;
     text-transform: uppercase;
     color: #555;
     font-size: 20px;
@@ -2441,7 +2441,7 @@ header.nav-block-left {
 .count-down,
 .count-down-alt {
     text-transform: uppercase;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 .count-down .c-grid,
@@ -4257,7 +4257,7 @@ address p {
 
 
 .phrase_solesdi {
-        font-family: 'Abel', sans-serif;
+        font-family: 'Muli', sans-serif;
     font-size: 40px;
 }
 
@@ -4334,8 +4334,8 @@ address p {
     width: 100%;
 }
 
-.marg_top {
-    margin: 50px;
+.marg_top2 {
+    margin: 80px;
 }
 
 .top_carousel {
@@ -4350,7 +4350,7 @@ address p {
 
 
 .overlap {
-    margin: 50px 0px 0px -100px
+    margin: 50px 0px 0px 0px
 }
 
 .img-responsive {
@@ -4368,16 +4368,16 @@ address p {
 
 
 .text_h {
-    font-size: 70px
+    font-size: 60px
 }
 
 .text_b {
     font-size: 30px;
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 .overlap_b {
-    margin: 0px 0px 0px -50px
+    margin: 0px 0px 0px 0px
 }
 
 .bg_cloth {
