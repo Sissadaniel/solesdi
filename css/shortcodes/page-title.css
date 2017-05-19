@@ -107,13 +107,14 @@
 -----------------------------------------------------------------*/
 
 .page-title.background-title {
-    background-image: url(../../img/parallax/1.jpg);
-    background-position: 50% 0;
+    background-image: url(../../img/custom/back_hero.jpg);
+    background-position: center;
     background-size: cover;
     /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     padding: 200px 0;
     height: auto;
+    background-attachment: fixed;
 }
 
 

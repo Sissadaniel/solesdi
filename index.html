@@ -84,11 +84,16 @@
 
     <!--hero section-->
 
-    <div id="fullscreen-banner" class="parallax">
+    <!-- <div id="fullscreen-banner" class="parallax">
     </div>
 
     <div class="parallax_mob">
         <img src="./img/custom/back_hero.jpg" alt="">
+    </div>-->
+
+    <div id="owl-demo" class="owl-carousel owl-theme">
+        <div class="item"><img src="./img/custom/back_hero.jpg" alt="solesdi project"></div>
+        <div class="item"><img src="./img/custom/back_hero_dada.jpg" alt="dada design"></div>
     </div>
 
     <!--hero section-->
@@ -169,7 +174,7 @@
             <div class="hor_mar"></div>
             <div class="hor_mar"></div>
             <div class="heading-title-alt text-center">
-                <a href="a-solesdi-portfolio.html" class="text-uppercase">
+                <a href="solesdi-portfolio.html" class="text-uppercase">
                     <h3>More Projects</h3>
                 </a>
             </div>
@@ -226,35 +231,26 @@
 
     <script>
         (function($) {
-
             $.fn.parallax = function(options) {
-
                 var windowHeight = $(window).height();
-
                 // Establish default settings
                 var settings = $.extend({
                     speed: 0.15
                 }, options);
-
                 // Iterate over each object in collection
                 return this.each(function() {
-
                     // Save a reference to the element
                     var $this = $(this);
-
                     // Set up Scroll Handler
                     $(document).scroll(function() {
-
                         var scrollTop = $(window).scrollTop();
                         var offset = $this.offset().top;
                         var height = $this.outerHeight();
-
                         // Check if above or below viewport
                         if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
                             return;
                         }
                         var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-
                         // Apply the Y Background Position to Set the Parallax Effect
                         $this.css('background-position', 'center ' + yBgPosition + 'px');
 
@@ -381,6 +377,17 @@
     </script>
 
     <script type="text/javascript">
+        $('.fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+    </script>
+
+    <script type="text/javascript">
         $('.center').slick({
             centerMode: true,
             infinite: true,
@@ -425,6 +432,31 @@
                     }
                 }
             ]
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#owl-demo").owlCarousel({
+
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                autoPlay: 5000,
+                navigationText: false,
+
+
+                // "singleItem:true" is a shortcut for:
+                // items : 1,
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
+
+            });
+
         });
 
     </script>
