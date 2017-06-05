@@ -12,6 +12,15 @@
         margin-top: 24px;
     }
 
+    @media (max-width: 767px) {
+        .navbar-default {
+            z-index: 10000;
+            margin-top: 0px;
+        }
+
+
+    }
+
     .navbar-default .navbar-brand {
         font-family: "Muli", sans-serif;
         color: #559acc;
@@ -47,7 +56,7 @@
     }
 
     .navbar-default .nav li a {
-        text-transform: uppercase;
+        text-transform:none:
         font-family: "Avenir", sans-serif;
         font-weight: 400;
         letter-spacing: 1px;
@@ -73,7 +82,7 @@
     }
 
     .locations {
-        background-color: #ff9494;
+        background-color: #42403e;
         color: #fff;
         height: 24px;
         position: fixed;
@@ -113,7 +122,7 @@
         }
         .navbar-default.navbar-shrink {
             padding: 10px 0;
-            background-color: #222;
+            background-color: #292725;
             margin-top: 24px;
         }
         .navbar-default.navbar-shrink .navbar-brand {
@@ -129,38 +138,43 @@
 <div class="locations">
     <div class="container">
         <div class="row">
-            <div class="under_cons">SITE UNDER CONSTRUCTION</div>
-            <!--<div id="menu">
-                  <ul>
-                      <li>
-                         <a class="select_loc" href="loc_mexico.html">Miami</a>
-                      </li>
-                      <li>
-                          |
-                      </li>
-                      <li>
-                         <a class="select_loc" href="loc_mexico.html">Denver</a>
-                      </li>
-                      <li>
-                          |
-                      </li>
-                      <li>
-                          <a class="select_loc" href="loc_mexico.html">Mexico City</a>
-                      </li>
-                      <li>
-                          |
-                      </li>
-                      <li>
-                          <a class="select_loc" href="loc_mexico.html">Guadalajara</a>
-                      </li>
-                      <li>
-                          |
-                      </li>
-                      <li>
-                           <a class="select_loc" href="loc_mexico.html">Bogota</a>
-                      </li>
-                  </ul>
-              </div>-->
+            <!--<div class="under_cons">SITE UNDER CONSTRUCTION</div>-->
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a class="select_loc" href="solesdi-showrooms.html#miami">Miami</a>
+                    </li>
+                    <li>
+                        |
+                    </li>
+                    <li>
+                        <a class="select_loc" href="solesdi-showrooms.html#denver">Denver</a>
+                    </li>
+                    <li>
+                        |
+                    </li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mexico<span class="caret"></span></a>
+                    <ul class="dropdown-menu back_grey" role="menu">
+                        <li><a href="solesdi-showrooms.html#park">Park Plaza</a></li>
+                        <li><a href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
+                    </ul>
+                </li>
+
+                    <li>
+                        |
+                    </li>
+                    <li>
+                        <a class="select_loc" href="solesdi-showrooms.html#guadalajara">Guadalajara</a>
+                    </li>
+                    <li>
+                        |
+                    </li>
+                    <li>
+                        <a class="select_loc" href="solesdi-showrooms.html#bogota">Bogota</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -176,7 +190,7 @@
 								<span class="icon-bar"></span>
 						</button>
             <a class="navbar-brand page-scroll solesdi__logo__flex" href="index.html">
-                <img src="img/custom/solesdi_logo.png">
+                <img class="mar_lefta" src="img/custom/solesdi_logo.png">
             </a>
         </div>
 
@@ -187,22 +201,29 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About us <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
                     <ul class="dropdown-menu back_grey" role="menu">
-                        <li><a href="about-us.html">Who we are</a></li>
-                        <li><a href="solesdi-family.html">Family</a></li>
-                        <li><a href="press.html">Press</a></li>
+                        <li><a href="solesdi-showrooms.html#miami">Miami</a></li>
+                        <li><a href="solesdi-showrooms.html#denver">Denver</a></li>
+                        <li><a href="solesdi-showrooms.html#park">Mexico</a></li>
+                        <li><a href="solesdi-showrooms.html#guadalajara">Guadalajara</a></li>
+                        <li><a href="solesdi-showrooms.html#bogota">Bogota</a></li>
                     </ul>
                 </li>
-                <li class="">
-                    <a class="page-scroll" href="solesdi-showrooms.html">Locations</a>
-                </li>
+
                 <li class="">
                     <a class="page-scroll" href="solesdi-portfolio.html">Projects</a>
                 </li>
-                <li class="" style="height: 45px; display: flex; align-items: center; padding:10px;">
-                    <a href="http://www.forte.com.mx" target="_blank"><img src="./img/custom/forte_logo.png" alt="logo forte"></a>
+                <li class="">
+                    <a class="page-scroll" href="about-us.html">Who we are</a>
                 </li>
+                <li class="">
+                    <a class="page-scroll" href="solesdi-family.html">Family</a>
+                </li>
+                <li class="">
+                    <a class="page-scroll" href="press.html">Press</a>
+                </li>
+
 
             </ul>
         </div>
@@ -211,10 +232,12 @@
     <!-- /.container-fluid -->
 </nav>
 
-<script>
+<!--<script>
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
 
-</script>
+</script>-->
+
+

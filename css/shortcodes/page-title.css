@@ -5,9 +5,16 @@
 
 .page-title {
     position: relative;
-    padding: 50px 0;
-    background-color: #F5F5F5;
+    padding: 3px 0;
+    background-color: #292725;
 }
+
+.lala .page-title {
+    position: relative;
+    padding: 50px 0;
+    background-color: #292725;
+}
+
 
 
 .page-title h1,
