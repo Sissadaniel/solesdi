@@ -35,9 +35,9 @@
 
 #footer.dark  .social-link  a {
     display: inline-block;
-    font-size: 20px;
+    font-size: 23px;
     color: #ffffff;
-    margin: 15px;
+    margin: 0px 10px;
 }
 
 
@@ -45,17 +45,17 @@
     border: 1px solid #222;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 0%;
     line-height: 40px;
     text-align: center;
 }
 
 #footer.dark  .social-link.circle a {
     border: 1px solid #fff;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -110,8 +110,9 @@
 }
 
 #footer.dark .primary-footer {
-    background: #292725;
-    padding: 80px 0;
+    background: #333333;
+    padding: 7px 0px;
+
 }
 
 #footer .f-list, .r-work {
@@ -154,7 +155,7 @@
 
 #footer.dark .secondary-footer {
     background: #292725;
-    padding: 15px 0;
+    padding: 7px 0;
     border-top:1px solid #2c2c2c ;
     display: inline-block;
     width: 100%;
@@ -274,3 +275,4 @@
 .short-pad {
     padding: 40px 0 !important;
 }
+

@@ -25,7 +25,19 @@ Table of contents
 
 @media screen and (max-width: 1366px) {}
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .text_center_mob {
+        text-align: center;
+    }
+    .btn {
+        /* margin-right: 20px; */
+        margin-right: 0px;
+    }
+
+    .primary-footer{
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 1199px) {
     .overlap {
@@ -433,7 +445,6 @@ Table of contents
     .page-content {
         padding: 0px 0;
     }
-
     .heading-title {
         margin-bottom: 50px;
     }
@@ -548,7 +559,6 @@ Table of contents
     .featured-box .one-third {
         width: 100%;
     }
-
     .half-txt {
         width: 80%;
     }

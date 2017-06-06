@@ -2282,6 +2282,10 @@ header.nav-block-left {
     display: none;
 }
 
+.mar_100m {
+    margin-top: 100px;
+}
+
 @media screen and (max-width: 767px) {
     .parallax {
         display: none;
@@ -2296,13 +2300,14 @@ header.nav-block-left {
         margin-top: 75px;
     }
     .mar_100m {
-        margin-top: 50px;
+        margin-top: 0px;
     }
+
 }
 
-.mar_100m {
-    margin-top: 100px;
-}
+
+
+
 
 
 /* ----------------------------------------------------------------
@@ -4405,6 +4410,17 @@ address p {
 .mar_top {
     margin-top: 10px;
 }
+.mar_top50 {
+    margin-top: 50px;
+}
+.mar_top30 {
+    margin-top: 30px;
+}
+
+.mar_bot30 {
+    margin-bottom: 30px;
+}
+
 
 .100_div {
     background: #1b1b1b;
@@ -4667,11 +4683,12 @@ a {
   bottom: 0;
   left: 0;
     width: 100%;
-    padding: 0 48px;
+
 }
 
 .dropdown-submenu {
     position: relative;
+    background-color: #5B5752
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -4679,9 +4696,10 @@ a {
     left: 100%;
     margin-top: -6px;
     margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
+    -webkit-border-radius: 0 0px 0px 0px;
+    -moz-border-radius: 0 0px 0px;
+    border-radius: 0 0px 0px 0px;
+      background-color: #5B5752
 }
 
 .dropdown-submenu:hover>.dropdown-menu {
@@ -4703,7 +4721,7 @@ a {
 }
 
 .dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
+    border-left-color: transparent;
 }
 
 .dropdown-submenu.pull-left {
@@ -4713,7 +4731,29 @@ a {
 .dropdown-submenu.pull-left>.dropdown-menu {
     left: -100%;
     margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
+    -webkit-border-radius: 0px 0 0px 0px;
+    -moz-border-radius: 0px 0 0px 0px;
+    border-radius: 0px 0 0px 0px;
+}
+
+.rel_pos {
+    position: relative;
+}
+
+.abs_pos_bot {
+    position: absolute;
+    bottom: 0
+}
+
+.flex_center_col {
+        display: flex;
+    flex-wrap: wrap;
+
+}
+
+.text_right {
+    text-align: right
+}
+.mar-left {
+    margin-left: -10px
 }
