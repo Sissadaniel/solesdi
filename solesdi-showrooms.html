@@ -517,6 +517,42 @@
     <script src="js/scripts.js?6"></script>
 
     <script>
+      var jump=function(e)
+      {
+         console.log('running jump function!');
+         if (e){
+             console.log('we have E!');
+             e.preventDefault();
+             var target = $(this).attr("href");
+             console.log('our target is: ' + target + ' from this.attrhref');
+         }else{
+             var target = location.hash;
+             console.log('our target is: ' + target + ' from location.hash');
+         }
+
+         $('html,body').animate({
+             scrollTop: $(target).offset().top -100
+         },2000,function(){
+             console.log('we are inside the animate portion!');
+             location.hash = target;
+         });
+      };
+
+      $(document).ready(function()
+      {
+          if (location.hash){
+              console.log('theres a hash!');
+              setTimeout(function(){
+                  $('html, body').scrollTop(0);
+                  jump();
+              }, 2200);
+          }else{
+              $('html, body').show();
+          }
+      });
+    </script>
+
+    <script>
         $(function() {
             $("#footer_template").load("a-solesdi-footer.html");
         });
@@ -528,8 +564,6 @@
         });
 
     </script>
-
-
 
 </body>
 
