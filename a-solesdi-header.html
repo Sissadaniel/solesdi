@@ -17,8 +17,6 @@
             z-index: 10000;
             margin-top: 0px;
         }
-
-
     }
 
     .navbar-default .navbar-brand {
@@ -56,8 +54,7 @@
     }
 
     .navbar-default .nav li a {
-        text-transform:none:
-        font-family: "Avenir", sans-serif;
+        text-transform: none: font-family: "Avenir", sans-serif;
         font-weight: 400;
         letter-spacing: 1px;
         color: #fff;
@@ -154,12 +151,12 @@
                         |
                     </li>
                     <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mexico<span class="caret"></span></a>
-                    <ul class="dropdown-menu back_grey" role="menu">
-                        <li><a href="solesdi-showrooms.html#park">Park Plaza</a></li>
-                        <li><a href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
-                    </ul>
-                </li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mexico<span class="caret"></span></a>
+                        <ul class="dropdown-menu back_grey" role="menu">
+                            <li><a href="solesdi-showrooms.html#park">Park Plaza</a></li>
+                            <li><a href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
+                        </ul>
+                    </li>
 
                     <li>
                         |
@@ -178,6 +175,11 @@
         </div>
     </div>
 </div>
+
+
+
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
     <div class="container">
@@ -202,12 +204,19 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
-                    <ul class="dropdown-menu back_grey" role="menu">
+                    <ul class="dropdown-menu back_grey multi-level" role="menu" aria-labelledby="dropdownMenu">
                         <li><a href="solesdi-showrooms.html#miami">Miami</a></li>
                         <li><a href="solesdi-showrooms.html#denver">Denver</a></li>
-                        <li><a href="solesdi-showrooms.html#park">Mexico</a></li>
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1">Mexico</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="solesdi-showrooms.html#park">Park Plaza</a></li>
+                                <li><a href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
+                            </ul>
+                        </li>
                         <li><a href="solesdi-showrooms.html#guadalajara">Guadalajara</a></li>
                         <li><a href="solesdi-showrooms.html#bogota">Bogota</a></li>
+
                     </ul>
                 </li>
 
@@ -223,8 +232,6 @@
                 <li class="">
                     <a class="page-scroll" href="press.html">Press</a>
                 </li>
-
-
             </ul>
         </div>
         <!-- /.navbar-collapse -->
