@@ -20,7 +20,7 @@ body {
     }
 
     .navbar-default .navbar-brand {
-      font-family: "Muli", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       color: #559acc;
       margin-left: 18px;
     }
@@ -54,7 +54,8 @@ body {
     }
 
     .navbar-default .nav li a {
-      text-transform: none: font-family: "Avenir", sans-serif;
+      text-transform: none;
+          font-family: "Source Sans Pro", sans-serif;
       font-weight: 400;
       letter-spacing: 1px;
       color: #fff;
@@ -177,7 +178,7 @@ body {
 </div>
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+<nav class="navbar navbar-default navbar-fixed-top navbar-shrink ">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header page-scroll">
@@ -188,17 +189,17 @@ body {
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand page-scroll solesdi__logo__flex" href="index.html">
-        <img class="mar_lefta" src="img/custom/solesdi_logo.png">
+        <img class="mar_lefta width_logo" src="img/custom/solesdi_logo.png">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right ">
         <li class="hidden active">
           <a href="#page-top"></a>
         </li>
-        <li class="dropdown">
+        <li class="dropdown ">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
           <ul class="dropdown-menu back_grey multi-level" role="menu" aria-labelledby="dropdownMenu">
             <li><a href="solesdi-showrooms.html#miami">Miami</a></li>
@@ -248,3 +249,12 @@ body {
      });
   });
 </script>
+
+<script>
+
+        $(document).on('click', '.navbar-collapse.in', function(e) {
+            if ($(e.target).is('a')) {
+                $(this).collapse('hide');
+            }
+        });
+    </script>

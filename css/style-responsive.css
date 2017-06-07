@@ -37,6 +37,12 @@ Table of contents
     .primary-footer{
         text-align: center;
     }
+    .mar_40m{
+        margin-top: 40px;
+    }
+    .pad_top3m{
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 1199px) {

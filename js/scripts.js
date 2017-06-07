@@ -310,6 +310,13 @@
                     enabled: true
                 }
             });
+            $(this).parent().find(".abrir").magnificPopup({
+                items: items,
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
         });
 
 
