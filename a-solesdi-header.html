@@ -234,3 +234,17 @@ body {
   </div>
   <!-- /.container-fluid -->
 </nav>
+
+<script>
+  $(".select_loc").click(function(){
+     var url = $(this).attr("href");
+     var target = url.split("#").pop();
+     target = "#" + target;
+     $('html,body').animate({
+         scrollTop: $(target).offset().top -100
+     },2000,function(){
+         console.log('we are inside the animate portion!');
+         location.hash = target;
+     });
+  });
+</script>

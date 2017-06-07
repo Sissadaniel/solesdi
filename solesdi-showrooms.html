@@ -506,7 +506,6 @@
       {
          console.log('running jump function!');
          if (e){
-             console.log('we have E!');
              e.preventDefault();
              var target = $(this).attr("href");
              console.log('our target is: ' + target + ' from this.attrhref');
@@ -535,6 +534,27 @@
               $('html, body').show();
           }
       });
+
+			$(window).scroll(function () {
+
+				var windscroll = $(window).scrollTop();
+
+				if (windscroll >= 50) {
+					//$('.nav').css('background-color','#c33');
+
+					$('.anchor').each(function(i) {
+							if ($(this).position().top <= windscroll + 200) {
+									$('.nav a.active').removeClass('active');
+									$('.nav a').eq(i).addClass('active');
+							}
+					});
+				} else {
+					//$('.nav').css('background-color','transparent');
+					$('.nav a.active').removeClass('active');
+					$('.nav a:first').addClass('active');
+				}
+			}).scroll();
+
     </script>
 
     <script>
