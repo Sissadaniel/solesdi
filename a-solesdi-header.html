@@ -4,38 +4,38 @@
         max-width: 100%;
         overflow-x: hidden;
     }
-
+    
     .navbar-default {
         border-color: transparent;
         background-color: #222;
         width: 100vw;
         margin-top: 24px;
     }
-
+    
     @media (max-width: 767px) {
         .navbar-default {
             z-index: 1000;
             margin-top: 25px;
         }
     }
-
+    
     .navbar-default .navbar-brand {
         font-family: "Source Sans Pro", sans-serif;
         color: #559acc;
         margin-left: 18px;
     }
-
+    
     .navbar-default .navbar-brand:hover,
     .navbar-default .navbar-brand:focus,
     .navbar-default .navbar-brand:active,
     .navbar-default .navbar-brand.active {
         color: #fec503;
     }
-
+    
     .navbar-default .navbar-collapse {
         border-color: rgba(255, 255, 255, .02);
     }
-
+    
     .navbar-default .navbar-toggle {
         border: none;
         /*
@@ -43,16 +43,16 @@
          background-color: #1ee2e7;
        */
     }
-
+    
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #fff;
     }
-
+    
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
         background-color: #222222;
     }
-
+    
     .navbar-default .nav li a {
         text-transform: none;
         font-family: "Source Sans Pro", sans-serif;
@@ -60,25 +60,25 @@
         letter-spacing: 1px;
         color: #fff;
     }
-
+    
     .navbar-default .nav li a:hover,
     .navbar-default .nav li a:focus {
         outline: 0;
         color: #559acc;
     }
-
+    
     .navbar-default .navbar-nav>.active>a {
         border-radius: 0;
         color: #fff;
         background-color: #559acc;
     }
-
+    
     .navbar-default .navbar-nav>.active>a:hover,
     .navbar-default .navbar-nav>.active>a:focus {
         color: #fff;
         background-color: #559acc;
     }
-
+    
     .locations {
         background-color: #42403e;
         color: #fff;
@@ -88,17 +88,17 @@
         text-align: center;
         z-index: 9999;
     }
-
+    
     .locations ul {
         padding: 0;
     }
-
+    
     .solesdi__logo__flex {
         padding: 0;
         display: flex;
         align-items: center;
     }
-
+    
     @media(min-width:768px) {
         .navbar-default {
             padding: 25px 0;
@@ -154,11 +154,10 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mexico<span class="caret"></span></a>
                         <ul class="dropdown-menu back_grey" role="menu">
-                            <li><a href="solesdi-showrooms.html#park">Park Plaza</a></li>
-                            <li><a href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
+                            <li><a class="select_loc" href="solesdi-showrooms.html#park">Park Plaza</a></li>
+                            <li><a class="select_loc" href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
                         </ul>
                     </li>
-
                     <li>
                         |
                     </li>
@@ -240,12 +239,19 @@
 
 <script>
     $(".select_loc").click(function() {
+        var path = window.location.pathname;
+        var showroomPath = '/solesdi-showrooms.html'
+        if (path === showroomPath) {
+            console.log('Our path is: ' + path);
+            event.preventDefault();
+        }
         var url = $(this).attr("href");
         var target = url.split("#").pop();
         target = "#" + target;
+        console.log('our target is: ' + target);
         $('html,body').animate({
             scrollTop: $(target).offset().top - 100
-        }, 200, function() {
+        }, 500, function() {
             console.log('we are inside the animate portion!');
             location.hash = target;
         });
