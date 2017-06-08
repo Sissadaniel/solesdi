@@ -154,8 +154,8 @@ body {
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mexico<span class="caret"></span></a>
             <ul class="dropdown-menu back_grey" role="menu">
-              <li><a href="solesdi-showrooms.html#park">Park Plaza</a></li>
-              <li><a href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
+              <li><a class="select_loc" href="solesdi-showrooms.html#park">Park Plaza</a></li>
+              <li><a class="select_loc" href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
             </ul>
           </li>
 
@@ -202,17 +202,17 @@ body {
         <li class="dropdown ">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
           <ul class="dropdown-menu back_grey multi-level" role="menu" aria-labelledby="dropdownMenu">
-            <li><a href="solesdi-showrooms.html#miami">Miami</a></li>
-            <li><a href="solesdi-showrooms.html#denver">Denver</a></li>
+            <li><a class="select_loc" href="solesdi-showrooms.html#miami">Miami</a></li>
+            <li><a class="select_loc" href="solesdi-showrooms.html#denver">Denver</a></li>
             <li class="dropdown-submenu">
               <a tabindex="-1">Mexico</a>
               <ul class="dropdown-menu">
-                <li><a tabindex="-1" href="solesdi-showrooms.html#park">Park Plaza</a></li>
-                <li><a href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
+                <li><a class="select_loc" tabindex="-1" href="solesdi-showrooms.html#park">Park Plaza</a></li>
+                <li><a class="select_loc" href="solesdi-showrooms.html#campos">Campos Eliseos</a></li>
               </ul>
             </li>
-            <li><a href="solesdi-showrooms.html#guadalajara">Guadalajara</a></li>
-            <li><a href="solesdi-showrooms.html#bogota">Bogota</a></li>
+            <li><a class="select_loc" href="solesdi-showrooms.html#guadalajara">Guadalajara</a></li>
+            <li><a class="select_loc" href="solesdi-showrooms.html#bogota">Bogota</a></li>
 
           </ul>
         </li>
@@ -237,17 +237,24 @@ body {
 </nav>
 
 <script>
-  $(".select_loc").click(function(){
-     var url = $(this).attr("href");
-     var target = url.split("#").pop();
-     target = "#" + target;
-     $('html,body').animate({
-         scrollTop: $(target).offset().top -100
-     },2000,function(){
-         console.log('we are inside the animate portion!');
-         location.hash = target;
-     });
+$(".select_loc").click(function(){
+  var path = window.location.pathname;
+  var showroomPath = '/solesdi-showrooms.html'
+  if (path === showroomPath) {
+    console.log('Our path is: ' + path);
+    event.preventDefault();
+  }
+  var url = $(this).attr("href");
+  var target = url.split("#").pop();
+  target = "#" + target;
+  console.log('our target is: ' + target);
+  $('html,body').animate({
+    scrollTop: $(target).offset().top -100
+  },2000,function(){
+    console.log('we are inside the animate portion!');
+    location.hash = target;
   });
+});
 </script>
 
 <script>
