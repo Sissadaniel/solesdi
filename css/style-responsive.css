@@ -777,3 +777,30 @@ Table of contents
         border-radius: 0px !important;
     }
 }
+
+
+/* -------------------------------
+   Navbar Options
+   ------------------------------- */
+
+@media (max-width:767px){
+    .hide_mob{
+    display: none;
+    }
+    .mar_0 {
+    margin-top: 0px
+}
+    #menu li {
+    display: inline;
+    margin: 0 1px;
+}
+}
+
+@media (min-width:768px){
+    .show_mob{
+        display: none
+    }
+
+}
+
+

@@ -1444,7 +1444,8 @@ header.nav-block-left {
     width: 100%;
     overflow: hidden;
     margin-top: 0px;
-    min-height: 100%
+    min-height: 100%;
+
 }
 
 .parallax {
@@ -2310,7 +2311,7 @@ header.nav-block-left {
         margin-top: 0px;
     }
     .pad_index{
-        margin-top: 50px
+        margin-top: 75px
     }
     .mar_loc{
         margin-top: -55px;
@@ -4515,7 +4516,7 @@ address p {
 }
 
 .lg_text {
-    font-size: 60px;
+    font-size: 35px;
 }
 
 .map_size {
@@ -4597,6 +4598,7 @@ address p {
 
 .bg_grey {
     background-color: #292725;
+
 }
 
 .social_center {
@@ -4660,6 +4662,9 @@ ul {
 
 .mar_100 {
     margin-top: 100px
+}
+.mar_75 {
+    margin-top: 75px
 }
 
 .mar_50 {
@@ -4814,3 +4819,18 @@ a {
     width: 220px;
 
 }
+
+.pad_title {
+    padding: 0px 30px;
+}
+
+.dotted {
+  padding: 2.25em 1.6875em;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+  }
