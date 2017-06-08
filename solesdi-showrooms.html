@@ -537,14 +537,17 @@
          });
       };
 
+      $('html, body').hide();
+
       $(document).ready(function()
       {
           if (location.hash){
               console.log('theres a hash!');
               setTimeout(function(){
                   $('html, body').scrollTop(0);
+                  $('html, body').show();
                   jump();
-              }, 2200);
+              }, 1500);
           }else{
               $('html, body').show();
           }
