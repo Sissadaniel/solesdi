@@ -4521,7 +4521,38 @@ address p {
 
 .map_size {
     width: 100%;
-    height: 200px;
+    height: 243px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.map_size1 {
+    width: 100%;
+    height: 170px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.map_size2 {
+    width: 100%;
+    height: 205px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.map_size3 {
+    width: 100%;
+    height: 243px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.map_size4 {
+    width: 100%;
+    height: 207px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+.map_size5 {
+    width: 100%;
+    height: 204px;
     padding-bottom: 40px;
     padding-top: 10px;
 }
@@ -4834,3 +4865,26 @@ a {
   -moz-background-size: 3px 3px;
   background-size: 3px 3px;
   }
+
+.pad_0 {
+    padding-right: 0
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+.text_comment {
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 100
+}
+
+.pad_of {
+    padding-bottom: 23px
+}
+
+.pad_bot3 {
+    padding-bottom: 30px
+}
